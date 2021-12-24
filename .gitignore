@@ -5,7 +5,9 @@ node_modules
 
 # local env files
 .env.local
+.env.production
 .env.*.local
+package-lock.json
 
 # Log files
 npm-debug.log*

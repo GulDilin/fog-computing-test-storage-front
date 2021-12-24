@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="display-1 font-weight-black primary--text text--darken-3 grey pa-4 text-center">
+      Fog compution tests storage
+    </div>
+
+    <v-main class="grey overflow-hidden">
+      <v-container
+        class="grey"
+        :fluid="$vuetify.breakpoint.lgAndDown"
+      >
+        <Main></Main>
+      </v-container>
+    </v-main>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Main from './components/Main.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Main
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
