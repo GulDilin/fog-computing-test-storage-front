@@ -1,18 +1,18 @@
 <template>
-  <div id="app">
-    <div class="display-1 font-weight-black primary--text text--darken-3 grey pa-4 text-center">
-      Fog compution tests storage
+  <v-app id="app">
+    <div class="display-1 font-weight-black white--text pa-4 text-center">
+      Fog computing tests storage
     </div>
 
-    <v-main class="grey overflow-hidden">
+    <v-main class=" overflow-hidden">
       <v-container
-        class="grey"
+        class=""
         :fluid="$vuetify.breakpoint.lgAndDown"
       >
         <Main></Main>
       </v-container>
     </v-main>
-  </div>
+  </v-app>
 </template>
 
 <script>
@@ -27,4 +27,10 @@ export default {
 </script>
 
 <style>
+  #app {
+    --tw-gradient-from: #6366f1;
+    --tw-gradient-to: #7f7fab;
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to,rgb(99 102 241/0));
+    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+  }
 </style>

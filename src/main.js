@@ -5,7 +5,7 @@ import config from './config'
 import api from './api'
 import vuetify from './plugins/vuetify'
 
-axios.defaults.baseUrl = `${config.URL_API}/api/`
+axios.defaults.baseURL = `${config.URL_API}/api/`
 
 Vue.config.productionTip = false
 
